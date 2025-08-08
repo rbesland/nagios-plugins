@@ -2,7 +2,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Centreon plugin: check_alcatel_stellar_auto.py
+Centreon plugin: check_alcatel_stellar.py
 
 Compatible avec les bornes OmniAccess Stellar AP1301 et AP1321 (et autres modèles similaires)
 via auto-détection de sysObjectID -> sous-arbre MIB spécifique du modèle.
@@ -87,7 +87,7 @@ IF_HC_OUT_OCTETS = "1.3.6.1.2.1.31.1.1.1.10"
 
 OID_SYSOBJECTID = "1.3.6.1.2.1.1.2.0"  # SNMPv2-MIB::sysObjectID.0
 
-STATE_DIR = "/tmp/check_alcatel_stellar_auto"
+STATE_DIR = "/tmp/check_alcatel_stellar"
 os.makedirs(STATE_DIR, exist_ok=True)
 
 AUTH_PROTO_MAP = {
